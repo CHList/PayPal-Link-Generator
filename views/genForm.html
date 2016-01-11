@@ -1,0 +1,25 @@
+<h1 class="text-center">PayPal Order Link Generator</h1>
+<div>
+    <form ng-submit="genCtrl.gen(); viewCtrl.setTab(2)">
+        <div class="form-group">
+            <input type="email" class="form-control input-lg" placeholder="Email" ng-model="genCtrl.email" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control input-lg" placeholder="Product Name" ng-model="genCtrl.name" required>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control input-lg" placeholder="Product Price" ng-model="genCtrl.price" required>
+        </div>
+        <div class="form-group">
+            <select class="form-control" ng-model="genCtrl.currency">
+              <option value="USD">USD</option>
+              <option value="CAD">CAD</option>
+              <option value="EUR">EUR</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-lg btn-info col-xs-12" value="Generate">
+    </div>
+</form>
+
+</div>
